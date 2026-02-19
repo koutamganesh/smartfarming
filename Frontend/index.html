@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Smart Farming Dashboard </title>
+<link rel="shortcut icon" href="images/farmer.png" type="png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet" />
+</head>
+<body class="bg-sky-400 min-h-screen flex flex-col items-center pt-4 px-4">
+    <h1 class="head">Smart Farming Dashboard</h1>
+    <section class="bg-white bg-opacity-50 rounded-lg shadow-md w-full max-w-md p-6 mb-6">
+        <h2 class="text-center text-lg mb-3">Sensor Readings</h2>
+        <div class="side1">
+            <img class="sensor" src="images/chat.png" alt="water">
+       <div class="sensor-details">
+        <p><span class="font-semibold">Temperature:</span> <span id="sensor-temp">loading...</span></p>
+        <p><span class="font-semibold">Soil Moisture:</span> <span id="soil-moisture">loading...</span></p>
+        </div>
+    </div>
+    </section>
+    <section class="bg-white bg-opacity-50 rounded-lg shadow-md w-full max-w-md p-6 mb-6">
+        <h2 class="text-center text-lg mb-3">Weather Report</h2>
+        <div class="side2">
+          <img class="weather" src="images/weather.png" alt="clouds">
+          <div class="weather-details">
+            <p><span class="font-semibold">Location:</span> <span id="location">Loading...</span></p>
+            <p><span class="font-semibold">Weather:</span> <span id="weather-desc">Loading...</span></p>
+            <p><span class="font-semibold">Temp:</span> <span id="weather-temp">Loading - °C</span></p>
+          </div>
+        </div>
+      </section>
+    <section class="bg-white bg-opacity-50 rounded-lg shadow-md w-full max-w-md p-6">
+        <div class="side3">
+        <h2 class="text-center text-lg mb-3">Motor Control</h2>
+        <div class="flex justify-center mb-2">
+            <button class="bg-gray-300 text-gray-700 text-sm px-3 py-1 rounded" id="motor-toggle" onclick="toggleMotor()">Turn Motor ON</button>
+        </div>
+        <p class="text-center" id="motorStatus">Motor is OFF</p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

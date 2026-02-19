@@ -1,0 +1,119 @@
+body {
+    font-family: 'UnifrakturCook', cursive;
+    background-image: url('images/water.jpg');
+    background-size: cover; 
+    background-position: top;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    min-height: 50vh; 
+}
+.head {
+    font-size: 2.5rem;
+    color: #2a9d8f;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+.section {
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 200px;
+    margin-top: 15px;
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+
+
+.h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #2a9d8f;
+    margin-bottom: 15px;
+}
+
+.p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.span {
+    font-weight: bold;
+    color: #333;
+}
+
+
+#sensor-temp, #soil-moisture, #location, #weather-desc, #weather-temp {
+    font-size: 1.2rem;
+    color: #2a9d8f;
+}
+
+#motorStatus {
+    font-size: 1.2rem;
+    color: #e74c3c; 
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.side2 {
+    display: flex;
+    align-items: center; 
+    gap: 20px; 
+  }
+  
+  .weather {
+    width: 100px; 
+    height: auto;
+  }
+  
+  .weather-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+  }
+  
+  .sensor {
+    width: 150px;
+  }
+  
+  .side1 {
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+  }
+  .sensor{
+    width: 100px; 
+    height: auto;
+  }
+  .sensor-details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+  }
